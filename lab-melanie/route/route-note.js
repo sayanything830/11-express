@@ -33,7 +33,7 @@ module.exports = function(router) {
   });
   router.delete('/note/:_id', (req, res) => {
     storage.destroy('note', req.params._id)
-      .then(() => res.status(204).end())
+      .then(() => res.sendStatus(204))
       .catch(err => errorHandler(err, res));
   });
 

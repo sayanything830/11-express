@@ -31,7 +31,8 @@
   "devDependencies": {
     "dotenv": "^4.0.0",
     "eslint": "^4.16.0",
-    "jest": "^22.1.4"
+    "jest": "^22.1.4",
+    "superagent": "^3.8.2"
   },
   "dependencies": {
     "bluebird": "^3.5.1",

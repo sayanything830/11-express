@@ -29,5 +29,5 @@ server.start = function(port, callback) {
 server.stop = function(callback) {
   if(!server.isOn) return callback(new Error('Server not running'));
   server.isOn = false;
-  server.http = app.close(callback);
+  server.http.close();
 };

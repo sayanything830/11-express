@@ -8,6 +8,9 @@ module.exports = function(err, res) {
 
   case msg.includes('enoent'): return res.status(404).send(`${err.name}: ${err.message}`);
 
+  case msg.includes('path error'): return res.status(404).send(`${err.name}: ${err.message}`);
+
+
   default: return res.status(500).send(`${err.name}: ${err.message}`);
   }
 };

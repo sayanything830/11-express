@@ -45,7 +45,7 @@ describe('PUT', function() {
         });
     });
     it('should return a 404 given an incorrect path', () => {
-      return superagent.get(':4000/api/v1/note')
+      return superagent.get(':4000/api/v1/not')
         .send({title: '', content: ''})
         .catch(err => {
           expect(err.status).toBe(404);

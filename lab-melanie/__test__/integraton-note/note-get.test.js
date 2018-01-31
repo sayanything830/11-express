@@ -46,7 +46,7 @@ describe('GET', function() {
       return superagent.get(':4000/api/v1/note')
         .send()
         .catch(err => {
-          expect(err.status).toBe(400);
+          expect(err.status).toBe(404);
         });
     });
     it('should return a 404 given an incorrect path', () => {

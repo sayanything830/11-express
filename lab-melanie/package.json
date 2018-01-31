@@ -4,6 +4,7 @@
   "description": "11-express",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "jest -i",
     "test:watch": "jest -i --watchAll",
     "test:debug": "DEBUG=http* jest -i",
